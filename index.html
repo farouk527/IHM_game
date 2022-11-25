@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="minesweeper.css">
+        <script src="minesweeper.js"></script>
+    </head>
+
+    <body  style="  background-color:#DEDBDB ;">
+        <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#contact">Help?</a></li>
+        </ul>
+
+    	<h1 class="ree"></h1>
+        <h1>Mines: <span id="mines-count">0</span></h1>
+        <div id="board"> </div>
+        <br>
+
+        <button id="flag-button">🚩</button>
+    
+        <button id="face"  onclick="window.location.reload();">😎</button>
+        <label for="pet-select">Choose level:</label>
+
+        <select name="pets" id="pet-select" onchange="level()" >
+         <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+</select>
+        
+    </body>
+</html>
+
