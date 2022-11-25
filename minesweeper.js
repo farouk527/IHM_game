@@ -17,7 +17,6 @@ window.onload = function() {
 }
 
 
-
 function level() {
 
 let niv = document.getElementById("pet-select");
@@ -26,24 +25,26 @@ console.log(niv.value);
 
 if(niv.value=="Easy") {
     minesCount=5;
+         document.getElementById("mines-count").innerText = 5;
 
   console.log(minesCount);
 }
 
 if(niv.value=="Medium") {
      minesCount=10-5;
+         document.getElementById("mines-count").innerText =10;
     console.log(minesCount);
 }
 if(niv.value=="Hard") {
-    minesCount=17-5-7+5;
+    minesCount= 17-5-7+5;
+    document.getElementById("mines-count").innerText =15;
    console.log(minesCount);
 }
-document.getElementById("mines-count").innerText = minesCount;
-document.getElementById("flag-button").addEventListener("click", setFlag);
 setMines();
 
 
 }
+
 
 
 
